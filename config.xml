@@ -14,6 +14,8 @@
         KodaIt Team
     </author>
 
+    <plugin spec="https://github.com/Innovation-District/cordova-plugin-inappbrowser.git" source="git" />
+
     <gap:platform name="android" />
 
 </widget>
