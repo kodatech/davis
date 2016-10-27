@@ -14,7 +14,7 @@
         KodaIt Team
     </author>
 
-    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <plugin name="cordova-plugin-inappbrowser"/>
 
     <gap:platform name="android" />
 
