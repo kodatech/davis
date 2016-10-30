@@ -190,7 +190,7 @@ function rechargable(){
 
 /*User validation*/
 function validate(){
-    var url = 'http://'+server+'/anzor_services/login';
+   /* var url = 'http://'+server+'/anzor_services/login';
     var usr = $("#usr").val();// btoa atob(encodedData);
     var pass = $("#pass").val();
 
@@ -219,7 +219,7 @@ function validate(){
                 '</div>'+
                 '<div id="addimg" class="pagetxt col-xs-12">' +
                 '<div id="start_scan" class="scanbttn col-xs-12">'+
-                /*'<a id="scan" href="#" class="btn btn-default scan"><img src="img/search.svg">Start scanning</a>'+*/
+
                 '</div>' +
                 '</div>';
 
@@ -242,15 +242,14 @@ function validate(){
 
         }else{
             msg("alert-warning", "User or Password are wrong.", "Try again!");
-//aca deberia hacer visible el pie
-            //$("#content-inner").show();
-
         }
     }).fail(function (a, b, c) {
         console.log(b + '|' + c);
     });
 
+*/
 
+    openHomePage();
 
 }
 
@@ -463,7 +462,7 @@ function changeQty(pos){
 
 
 function openHomePage(){
-    var uid = $("#uid").val();// btoa atob(encodedData);
+ /*   var uid = $("#uid").val();// btoa atob(encodedData);
     var url = 'http://'+server+'/anzor_services/home';
     return $.ajax({
         type: "GET",
@@ -484,14 +483,6 @@ function openHomePage(){
                 ref=window.open('http://'+server+'/anzor_services/redirhome?uid='+uid+'','_system');//
 
 
-                /*ref.addEventListener( "loadstop", function() {
-                 ref.executeScript({
-                 code: "document.body.innerHTML"//"localStorage.getItem( 'loginweb' )"
-                 },
-                 function (values){
-                 alert(values);
-                 });
-                 });*/
 
 
 
@@ -506,31 +497,9 @@ function openHomePage(){
     }).fail(function (a, b, c) {
         console.log(b + '|' + c);
     });
-    /*if (typeof(redirection) === 'undefined'){
-     redirection= "NO";
-     var ref=window.open('http://'+server+'/anzor_services/home?uid='+uid+'', '_system');
-     }else{
-     return;
-     }*/
 
-
-
-
-
-    /*ref.addEventListener( "loadstop", function() {
-     ref.executeScript(
-     { code: "document.body.innerHTML" },
-     function( values ) {
-     //alert( values[ 0 ] );
-     }
-     );
-     });*/
-
-    /*ref.addEventListener('loadstop', function() {
-     ref.executeScript({file: "js/custom.js"});
-     })*/
-
-
+*/
+    ref=window.open('http://davis.nz/','_system');
 }
 
 
