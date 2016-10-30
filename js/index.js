@@ -499,8 +499,8 @@ function openHomePage(){
     });
 
 */
-    ref=window.open('http://davis.nz/','_system');
-    
+    ref=window.open('http://davis.dev.kodait.com/','_system');
+
 }
 
 
