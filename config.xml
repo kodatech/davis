@@ -2,21 +2,51 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-       id        = "com.phonegap.kodait.davis"
-        version   = "1.0.0">
-    <name>DavisApp</name>
+       id        = "com.phonegap.ryanw.barcode"
+        version   = "2.0.0">
+    <name>AnzorApp</name>
 
     <description>
-
+        Scans barcodes or QR-codes.
     </description>
 
     <author href="http://phonegap.com" email="support@phonegap.com">
-        KodaIt Team
+        PhoneGap Team
     </author>
+    <!--https://github.com/phonegap/phonegap-plugin-barcodescanner.git
+    https://github.com/Telerik-Verified-Plugins/BarcodeScanner.git
+    <gap:plugin name="phonegap.plugin.barcodescanner" source="npm"/>
+    <gap:plugin name="com.phonegap.plugins.barcodescanner"/>
+<gap:plugin name="cordova-plugin-barcodescanner" source="npm"/>-->
 
-    <plugin name="cordova-plugin-inappbrowser"/>
+    <plugin name="br.com.paveisitemas.splashscreen" spec="2.1.1" source="pgb" />
 
+    <plugin spec="https://github.com/Telerik-Verified-Plugins/BarcodeScanner.git" source="git" />
+    <plugin spec="https://github.com/Innovation-District/cordova-plugin-inappbrowser.git" source="git" />
+
+    <!--<plugin name="cordova-plugin-inappbrowser"/>-->
+    <gap:plugin name="org.apache.cordova.network-information" />
+    <!--<gap:plugin name="org.apache.cordova.core.inappbrowser" />-->
+
+    <gap:plugin name="cordova-plugin-whitelist" source="npm"/>
+    <gap:plugin name="cordova-plugin-customurlscheme" source="npm">
+        <param name="URL_SCHEME" value="scan" />
+    </gap:plugin>
+    <!--<gap:url-scheme role="Viewer">
+        <scheme>scan</scheme>
+        <scheme>pgbw</scheme>
+    </gap:url-scheme>-->
+    <!--<gap:platform name="ios" />-->
     <gap:platform name="android" />
+
+    <!--Evita que se cierre la app al momento de presionar el launcher de nuevo
+    <gap:config-file platform="android" parent="/manifest/application">
+        <activity android:launchMode="singleTop" />
+    </gap:config-file>-->
+    <!--<gap:plugin name="com.ohh2ahh.plugins.appavailability" />-->
+
+    <gap:config-file platform="android" parent="/manifest/application"> <activity android:launchMode="singleTask" /> </gap:config-file>
+
 
     <feature name="http://api.phonegap.com/1.0/device" />
     <!--<feature name="debug-server" required="true">
@@ -81,6 +111,5 @@
 
     </platform>
     <preference name="SplashScreenDelay" value="5000" />
-
 
 </widget>
