@@ -4,7 +4,7 @@
         xmlns:android = "http://schemas.android.com/apk/res/android"
        id        = "com.phonegap.ryanw.barcode"
         version   = "2.0.0">
-    <name>AnzorApp</name>
+    <name>DavisApp</name>
 
     <description>
         Scans barcodes or QR-codes.
