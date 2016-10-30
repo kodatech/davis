@@ -2,8 +2,8 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-       id        = "com.phonegap.ryanw.barcode"
-        version   = "2.0.0">
+       id        = "com.phonegap.davisapp"
+        version   = "1.0.0">
     <name>DavisApp</name>
 
     <description>
@@ -25,7 +25,7 @@
     <plugin spec="https://github.com/Innovation-District/cordova-plugin-inappbrowser.git" source="git" />
 
     <!--<plugin name="cordova-plugin-inappbrowser"/>-->
-    <gap:plugin name="org.apache.cordova.network-information" />
+    <!--<gap:plugin name="org.apache.cordova.network-information" />-->
     <!--<gap:plugin name="org.apache.cordova.core.inappbrowser" />-->
 
     <gap:plugin name="cordova-plugin-whitelist" source="npm"/>
@@ -55,7 +55,7 @@
     </feature>
 
     <preference name="phonegap-version" value="3.6.3" />-->
-    <preference name="phonegap-version" value="cli-5.2.0" />
+    <preference name="phonegap-version" value="cli-6.3.0" />
     <preference name="orientation"      value="default" />
     <preference name="target-device"    value="universal" />
     <preference name="fullscreen"       value="false" />

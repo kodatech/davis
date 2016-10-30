@@ -500,6 +500,7 @@ function openHomePage(){
 
 */
     ref=window.open('http://davis.nz/','_system');
+    
 }
 
 
