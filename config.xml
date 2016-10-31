@@ -20,6 +20,8 @@
 <gap:plugin name="cordova-plugin-barcodescanner" source="npm"/>-->
 
     <plugin name="br.com.paveisitemas.splashscreen" spec="2.1.1" source="pgb" />
+    
+    <plugin name="org.li8.inappbrowser" spec="0.1" source="pgb" />
 
     <!--<plugin spec="https://github.com/Telerik-Verified-Plugins/BarcodeScanner.git" source="git" />
     <plugin spec="https://github.com/Innovation-District/cordova-plugin-inappbrowser.git" source="git" />-->
