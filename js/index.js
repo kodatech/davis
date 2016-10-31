@@ -466,7 +466,7 @@ function openHomePage(){
 
 */
 
-    ref=window.open(server,'_system');
+    ref=window.open('http://davis.dev.kodait.com/','_system');
 
 }
 
