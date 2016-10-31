@@ -204,7 +204,7 @@ function validate(){
     }).done(function (data) {
 
         if (data){
-           openHomePage();
+           //openHomePage();
 
         }else{
             msg("alert-warning", "User or Password are wrong.", "Try again!");
@@ -466,7 +466,7 @@ function openHomePage(){
 
 */
 
-    ref=window.open('http://davis.dev.kodait.com/','_system');
+    ref=window.open(server,'_system');
 
 }
 
