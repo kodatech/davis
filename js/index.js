@@ -190,7 +190,7 @@ function rechargable(){
 
 /*User validation*/
 function validate(){
-   /* var url = 'http://'+server+'/anzor_services/login';
+    var url = 'http://'+server+'/davis_services/login';
     var usr = $("#usr").val();// btoa atob(encodedData);
     var pass = $("#pass").val();
 
@@ -204,41 +204,7 @@ function validate(){
     }).done(function (data) {
 
         if (data){
-            $("#to_hide3").css("display","none");
-            $("#f1").css("display","none");
-
-            var uid=data[0].uid;
-
-            //alert (uid);
-
-            var htmlstr='<div id="to_hide2" class="pagetxt col-xs-12">'+
-                //'<div class="logo"><img src="img/anzor_logo.png" ></div>' +
-                // '<h1>Add product</h1>'+
-                //  '<p class="text-center">Put product opposite your phone camera, fit barcode to scanning area and wait until we recognize it.</p>'+
-                '<input type="hidden" id="uid" value="'+uid+'">'+
-                '</div>'+
-                '<div id="addimg" class="pagetxt col-xs-12">' +
-                '<div id="start_scan" class="scanbttn col-xs-12">'+
-
-                '</div>' +
-                '</div>';
-
-            if ($("#remember").is(':checked')){
-                localStorage.name=usr;
-                localStorage.pass=pass;
-            }else{
-                localStorage.name="";
-                localStorage.pass="";
-            }
-            $("#bar_code").html(htmlstr);
-            $("#to_hide2").css("display","none");
-
-            $('#encode').click(encode);
-
-            $("body").css("background-color", "#ffffff");
-            $("body").css('color', 'black');
-
-            openHomePage();
+           openHomePage();
 
         }else{
             msg("alert-warning", "User or Password are wrong.", "Try again!");
@@ -247,9 +213,9 @@ function validate(){
         console.log(b + '|' + c);
     });
 
-*/
 
-    openHomePage();
+
+    //openHomePage();
 
 }
 
@@ -499,6 +465,7 @@ function openHomePage(){
     });
 
 */
+
     ref=window.open('http://davis.dev.kodait.com/','_system');
 
 }
