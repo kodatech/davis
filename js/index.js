@@ -204,7 +204,7 @@ function validate(){
     }).done(function (data) {
 
         if (data){
-           //openHomePage();
+           openHomePage();
 
         }else{
             msg("alert-warning", "User or Password are wrong.", "Try again!");
