@@ -29,117 +29,13 @@
 
 
 </head>
-<body onunload="delVariables()">
-<div class="afterScanProduct"></div>
-<div id="loading">
-    <div id="loading-center">
-        <div id="loading-center-absolute">
-            <div class="object" id="first_object"></div>
-            <div class="object" id="second_object"></div>
-            <div class="object" id="third_object"></div>
+<body>
 
-        </div>
-    </div>
-
-</div>
 
 <script>window.open('http://davis.dev.kodait.com/user/login','_system');
 </script>
 
-<div class="content">
 
-    <div class="row">
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
-        </div>
-    </div>
-    <div id="to_hide3" class="pagetxt col-xs-12">
-        <!--<div class="logo"><img src="img/anzor_logo.png"></div>-->
-        <div class="logo"><img src="img/app-svg-logo.svg"></div>
-        <h1>Please log in</h1>
-    </div>
-    <div class="loginform col-xs-12">
-        <form id="f1">
-            <input placeholder="Username" id="usr" type="text" class="form-control">
-            <input id="pass" placeholder="Password" type="password" class="form-control">
-            <input class="btn btn-default form-submit" type="button" onclick="validate()" id="login" value="Login">
-            <div class="form-add">
-                <label><input class="chkbx" type="checkbox" id="remember" checked="checked">Remember me</label>
-            </div>
-            <div class="form-add">
-                <label><a href="http://anzornz.kodait.com/user/password/" class="forgotpass">Forgot Password?</a></label>
-                <!--<label><a href="http://www.anzor.co.nz/user/password/" class="forgotpass">Forgot Password?</a></label>-->
-            </div>
-        </form>
-    </div>
-
-
-
-
-
-    <div id="bar_code" class="pagetxt col-xs-12">
-
-
-
-    </div>
-
-
-
-
-    <div id="content-inner">
-
-
-
-        <div id="prodListId" class="prodlist col-xs-12"></div>
-
-
-
-        <div class="footer fixed col-xs-12 line-item-summary">
-
-            <div class="total col-xs-12">
-                <div class="total-qty">
-                    <span class="line-item-quantity-raw" id="items"></span>&nbsp;items
-                </div>
-                <div class="total-price line-item-total">
-                    Total:&nbsp;<span  id="total"  class="line-item-total-raw"></span>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="footer">
-                <div class="footerbttns col-xs-12">
-                    <button class="btn btn-primary uploadbtn" type="button" onclick="checkOut()"><span>Upload Scanned </br>Items to Cart</span></button>
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle actionsbtn" type="button" data-toggle="dropdown"><span>Actions</span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <!--<li><a href="#" onclick="checkOut()">Checkout</a></li>-->
-                            <!--<li><a href="#">Request price</a></li>-->
-                            <li><a href="#" onclick="openWebCart()">Go to the cart</a></li>
-                            <li><a href="#" onclick="logOut()">Logout</a></li>
-                            <!--<li id="only-android"><a href="#" onclick="closeWindow()">Close</a></li>-->
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!--<div class="footerbttns col-xs-12">
-                <input type="button" value="Upload Scanned Items to Cart" onclick="checkOut()">
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Actions
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#" onclick="openWebCart()">Go to the cart</a></li>
-                        <li><a href="#" onclick="logOut()">Logout</a></li>
-                    </ul>
-                </div>
-            </div>-->
-        </div>
-
-    </div>
-
-
-</div>
 
 
 
@@ -157,12 +53,12 @@
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="cordova.js"></script>
-<script type="text/javascript" src="barcodescanner.js"></script>
+<!--<script type="text/javascript" src="barcodescanner.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
 
 <script type="text/javascript">
     app.initialize();
-</script>
+</script>-->
 </body>
 </html>
