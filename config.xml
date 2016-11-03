@@ -26,6 +26,7 @@
     <!--<plugin name="cordova-plugin-crosswalk-webview" source="npm" />-->
 
 
+    <plugin name="cordova-plugin-inappbrowser" source="npm" />
     <!--<plugin spec="https://github.com/Telerik-Verified-Plugins/BarcodeScanner.git" source="git" />
     <plugin spec="https://github.com/Innovation-District/cordova-plugin-inappbrowser.git" source="git" />-->
 
