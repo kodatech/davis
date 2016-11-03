@@ -1,6 +1,4 @@
-//$('#edit-actions').click(alert('hi'));
-
-
-function scanProductInnAppBrowser(){
-    document.getElementById("scan_Prod_Id").onclick(alert("hi"));
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    window.open = cordova.InAppBrowser.open;
 }
