@@ -26,10 +26,26 @@
     <link rel="stylesheet" type="text/css" href="css/new.css" />
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">-->
     <title>DavisApp</title>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+       window.open = cordova.InAppBrowser.open;
+    }
+
+    </script>
 
 
 </head>
-<body>
+<body onload="onLoad()">
 
 
 <script>
@@ -43,7 +59,8 @@
 
 
     var ref = cordova.InAppBrowser.open('http://davis.dev.kodait.com/user/login', '_blank');*/
-    window.open('http://davis.dev.kodait.com/user/login','_blank', 'location=yes');
+    //window.open('http://davis.dev.kodait.com/user/login','_blank', 'location=yes');
+    cordova.InAppBrowser.open('http://davis.dev.kodait.com/user/login', '_blank', 'location=yes');
 </script>
 
 
