@@ -19,7 +19,7 @@
     <gap:plugin name="com.phonegap.plugins.barcodescanner"/>
 <gap:plugin name="cordova-plugin-barcodescanner" source="npm"/>-->
 
-    <plugin name="cordova-plugin-splashscreen" source="npm" />-->
+    <plugin name="cordova-plugin-splashscreen" source="npm" version="3.2.1" />-->
     <!--<preference name="SplashScreen" value="screen"/>-->
 
     <!--<plugin name="org.apache.cordova.inappbrowser" source="pgb" />-->
@@ -78,7 +78,7 @@
 
     <preference name="phonegap-version" value="3.6.3" />-->
     <preference name="phonegap-version" value="cli-5.4.1" />
-    <preference name="orientation"      value="default" />
+    <preference name="orientation"      value="portrait" />
     <preference name="target-device"    value="universal" />
     <preference name="fullscreen"       value="false" />
     <preference name="webviewbounce"    value="false" />
@@ -111,7 +111,7 @@
     <gap:splash src="res/screen/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
     <gap:splash src="res/screen/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
     <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />-->
-    <gap:splash src="res/screen/blackberry/screen-225.png"         gap:platform="blackberry" />
+    <!--<gap:splash src="res/screen/blackberry/screen-225.png"         gap:platform="blackberry" />
     <gap:splash src="res/screen/ios/screen-iphone-portrait.png"    gap:platform="ios"     width="320" height="480" />
     <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios"     width="640" height="960" />
     <gap:splash src="res/screen/ios/screen-ipad-portrait.png"      gap:platform="ios"     width="768" height="1024" />
@@ -119,17 +119,17 @@
 
     <gap:splash src="res/screen/ios/Splash-750x1334.png"     gap:platform="ios"     width="750" height="1334" />
     <gap:splash src="res/screen/ios/Splash-2208x1242.png"     gap:platform="ios"     width="1242" height="2208" />
-    <gap:splash src="res/screen/ios/Splash-1242x2208.png"     gap:platform="ios"     width="2208" height="1242" />
+    <gap:splash src="res/screen/ios/Splash-1242x2208.png"     gap:platform="ios"     width="2208" height="1242" />-->
 
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone" />
 
     <!-- content src="http://www.w3.org/2010/05/video/mediaevents.html" / -->
 
     <platform name="android">
-        <splash src="res/screen/android/screen-ldpi-portrait.png"  density="port-ldpi" />
-        <splash src="res/screen/android/screen-mdpi-portrait.png"  density="port-mdpi" />
-        <splash src="res/screen/android/screen-hdpi-portrait.png"  density="port-hdpi" />
-        <splash src="res/screen/android/screen-xhdpi-portrait.png" density="port-xhdpi" />
+        <splash src="res/screen/android/screen-ldpi-portrait.png"  density="ldpi" />
+        <splash src="res/screen/android/screen-mdpi-portrait.png"  density="mdpi" />
+        <splash src="res/screen/android/screen-hdpi-portrait.png"  density="hdpi" />
+        <splash src="res/screen/android/screen-xhdpi-portrait.png" density="xhdpi" />
 
     </platform>
     <preference name="SplashScreenDelay" value="5000" />
