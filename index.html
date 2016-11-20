@@ -26,7 +26,7 @@
     <link rel="stylesheet" type="text/css" href="css/new.css" />
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">-->
     <title>DavisApp</title>
-    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
     <script type="text/javascript" charset="utf-8">
 
     // Wait for device API libraries to load
@@ -67,12 +67,13 @@
 
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/cordova.js"></script>
 <script>
-    window.open('http://davis.dev.kodait.com/user/login','_blank', 'location=yes');
+    //window.open('http://davis.dev.kodait.com/user/login','_blank', 'location=yes');
     
     //window.open('http://davis.dev.kodait.com/user/login','_blank', 'location=yes');
-    //cordova.InAppBrowser.open('http://davis.dev.kodait.com/user/login','_blank', 'location=yes');
+    var ref = cordova.InAppBrowser.open('http://davis.dev.kodait.com/user/login','_blank', 'location=yes');
+    alert (ref)
     //cordova.InAppBrowser.open('http://www.elobservador.com.uy/','_blank', 'location=yes');
 </script>
 </body>
