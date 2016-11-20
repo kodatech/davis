@@ -40,7 +40,7 @@
     </gap:plugin>
     
     <gap:platform name="android" />
-    <!--<gap:platform name="ios" />-->
+    <!--<gap:platform name="ios" />--> 
 
     
 
