@@ -19,7 +19,7 @@
     <gap:plugin name="com.phonegap.plugins.barcodescanner"/>
 <gap:plugin name="cordova-plugin-barcodescanner" source="npm"/>-->
 
-    <plugin name="cordova-plugin-splashscreen" source="npm" version="3.2.1" />-->
+    <plugin name="cordova-plugin-splashscreen" source="npm" version="3.2.1" />
     <!--<preference name="SplashScreen" value="screen"/>-->
 
     <!--<plugin name="org.apache.cordova.inappbrowser" source="pgb" />-->
@@ -27,7 +27,7 @@
     <!--<plugin name="cordova-plugin-crosswalk-webview" source="npm" />-->
 
 <!--org.apache.cordova.inappbrowser-->
-    <plugin name="cordova-plugin-inappbrowser" source="npm" />
+    <plugin name="org.apache.cordova.core.inappbrowser" />
    
    <plugin name="cordova-plugin-whitelist" />
 
@@ -39,7 +39,7 @@
         <param name="URL_SCHEME" value="scan" />
     </gap:plugin>
     
-    <gap:platform name="android" />
+    <!--<gap:platform name="android" />-->
     <gap:platform name="ios" />
 
     
