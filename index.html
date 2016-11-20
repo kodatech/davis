@@ -1,32 +1,9 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
-   <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/new.css" />
-    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">-->
-    <title>DavisApp</title>
-    <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
+  <head>
+    <title>Device Ready Example</title>
+
+    <!--<script type="text/javascript" charset="utf-8" src="cordova.js"></script>-->
     <script type="text/javascript" charset="utf-8">
 
     // Wait for device API libraries to load
@@ -38,46 +15,12 @@
     // device APIs are available
     //
     function onDeviceReady() {
-       window.open = cordova.InAppBrowser.open;
-       alert ('aca')
+        alert("hi");
+        
     }
 
     </script>
-
-
-</head>
-<body onload="onLoad()">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/cordova.js"></script>
-<script>
-    //window.open('http://davis.dev.kodait.com/user/login','_blank', 'location=yes');
-    
-    //window.open('http://davis.dev.kodait.com/user/login','_blank', 'location=yes');
-    alert("2")
-    //var ref = cordova.InAppBrowser.open('http://davis.dev.kodait.com/user/login','_blank', 'location=yes');
-    //alert (ref)
-    window.open("http://m.nzherald.co.nz/");
-    //cordova.InAppBrowser.open('http://www.elobservador.com.uy/','_blank', 'location=yes');
-</script>
-</body>
+  </head>
+  <body onload="onLoad()">
+  </body>
 </html>
