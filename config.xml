@@ -27,7 +27,9 @@
     <!--<plugin name="cordova-plugin-crosswalk-webview" source="npm" />-->
 
 <!--org.apache.cordova.inappbrowser-->
-    <plugin name="org.apache.cordova.core.inappbrowser" />
+   <!-- <plugin name="cordova-plugin-inappbrowser" source="npm" />-->
+
+    <gap:plugin name="org.apache.cordova.core.inappbrowser" />
    
    <plugin name="cordova-plugin-whitelist" />
 
