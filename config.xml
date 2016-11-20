@@ -27,7 +27,7 @@
     <!--<plugin name="cordova-plugin-crosswalk-webview" source="npm" />-->
 
 <!--org.apache.cordova.inappbrowser-->
-    <plugin name="cordova-plugin-inappbrowser" source="npm" />
+    <plugin name="cordova-plugin-inappbrowser"/>
    
    <plugin name="cordova-plugin-whitelist" />
 
@@ -40,7 +40,7 @@
     </gap:plugin>
     
     <gap:platform name="android" />
-    <gap:platform name="ios" />
+    <!--<gap:platform name="ios" />-->
 
     
 
