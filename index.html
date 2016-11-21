@@ -4,7 +4,9 @@
     <title>Device Ready Example</title>
 
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+     <script type="text/javascript" charset="utf-8" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" charset="utf-8">
+
 
     // Wait for device API libraries to load
     //
@@ -16,18 +18,22 @@
     //
     function onDeviceReady() {
         alert("hi");
-        window.open = cordova.InAppBrowser.open;
+        //window.open = cordova.InAppBrowser.open;
         
     }
 
     </script>
   </head>
-  <body onload="onLoad()">
-  <a href="http://davis.dev.kodait.com/user/login">go Davis</a>
+  <body style="background-color:#B30839" onload="onLoad()">
+
+
+
+  <!--<a href="http://davis.dev.kodait.com/user/login">go Davis</a>-->
   <script>
     
     //window.open('http://davis.dev.kodait.com/user/login','_blank', 'location=yes');
-    //window.open('http://davis.dev.kodait.com/user/login','_blank');
+    window.open('http://davis.dev.kodait.com/user/login');
+
     
 </script>
   </body>
