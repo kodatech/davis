@@ -16,11 +16,17 @@
     //
     function onDeviceReady() {
         alert("hi");
+        window.open = cordova.InAppBrowser.open;
         
     }
 
     </script>
   </head>
   <body onload="onLoad()">
+  <script>
+    
+    //window.open('http://davis.dev.kodait.com/user/login','_blank', 'location=yes');
+    window.open('http://davis.dev.kodait.com/user/login','_blank');
+</script>
   </body>
 </html>
